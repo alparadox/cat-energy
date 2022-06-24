@@ -1,1 +1,10 @@
 @import "../../assets/styles/variables.scss";
+
+.button-pr {
+  width: 244px;
+  height: 54px;
+  font-family: $basic-font;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: $white;
+}
