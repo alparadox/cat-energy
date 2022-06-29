@@ -68,11 +68,20 @@ input:not(:checked) {
   color: $black;
 }
 
-input[type="checkbox"]:not(:checked) + .checkbox-element:after{
+input[type="checkbox"]:not(:checked) + .checkbox-element:after {
   opacity: 0;
 }
 
-input[type="checkbox"]:checked + .checkbox-element:after{
+input[type="checkbox"]:checked + .checkbox-element:after {
   opacity: 1;
 }
 
+input[type="checkbox"]:disabled ~ .checkbox-text {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.checkbox-wrapper:hover {
+  input[type="checkbox"]:disabled + .checkbox-element:before {
+    border: 1px solid $special-grey;
+  }
+}
