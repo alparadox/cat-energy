@@ -5,13 +5,15 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { ButtonComponent } from './ui/button/button.component';
 import { CheckboxComponent } from './ui/checkbox/checkbox.component';
+import { RadioComponent } from './ui/radio/radio.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     ButtonComponent,
-    CheckboxComponent
+    CheckboxComponent,
+    RadioComponent
   ],
   imports: [
     BrowserModule
