@@ -1,1 +1,52 @@
 @import "../../../assets/styles/variables";
+
+.input-wrapper {
+  display: flex;
+
+}
+
+.input-text {
+  font-family: $basic-font;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: $dark-grey;
+  line-height: 42px;
+  margin-right: 28px;
+}
+
+input::placeholder {
+  font-family: $basic-font;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: $special-grey-2;
+}
+
+.input-element {
+  width: 500px;
+  height: 50px;
+  border: 1px solid $special-grey-3;
+  padding: 10px 20px 10px 20px;
+  font-family: $basic-font;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: $dark-grey;
+  border-radius: 0px;
+  &:hover {
+    border: 1px solid $special-grey;
+  }
+  &:focus {
+    outline: 0;
+    border: 2px solid $dark-grey;
+  }
+  &__error {
+    width: 500px;
+    height: 50px;
+    padding: 10px 20px 10px 20px;
+    font-family: $basic-font;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: $dark-grey;
+    border-radius: 0px;
+    border: 2px solid $red;
+  }
+}
