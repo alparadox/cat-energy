@@ -2,7 +2,6 @@
 
 .input-wrapper {
   display: flex;
-
 }
 
 .input-text {
@@ -22,7 +21,7 @@ input::placeholder {
 }
 
 .input-element {
-  width: 500px;
+  width: 100%;
   height: 50px;
   border: 1px solid $special-grey-3;
   padding: 10px 20px 10px 20px;
@@ -39,7 +38,7 @@ input::placeholder {
     border: 2px solid $dark-grey;
   }
   &__error {
-    width: 500px;
+    width: 100%;
     height: 50px;
     padding: 10px 20px 10px 20px;
     font-family: $basic-font;
