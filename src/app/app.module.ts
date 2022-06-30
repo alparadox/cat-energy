@@ -8,6 +8,7 @@ import { CheckboxComponent } from './ui/checkbox/checkbox.component';
 import { RadioComponent } from './ui/radio/radio.component';
 import { InputComponent } from './ui/input/input.component';
 import { InputIconComponent } from './ui/input-icon/input-icon.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { InputIconComponent } from './ui/input-icon/input-icon.component';
     CheckboxComponent,
     RadioComponent,
     InputComponent,
-    InputIconComponent
+    InputIconComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule
