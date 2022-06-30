@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-input-icon',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./input-icon.component.scss']
 })
 export class InputIconComponent implements OnInit {
+  @Input() title = "Email:*"
+  @Input() placeholder = "Введите email";
 
   constructor() { }
 
