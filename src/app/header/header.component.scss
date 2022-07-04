@@ -129,6 +129,7 @@
   text-decoration: none;
   color: $black;
   position: relative;
+  cursor: default;
   &:after {
     content: "";
     position: absolute;
