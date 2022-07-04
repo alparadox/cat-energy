@@ -1,0 +1,89 @@
+@import "../../assets/styles/variables";
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 57px 110px 58px 110px;
+  background: $grey;
+  @media (max-width: 541px) {
+    padding: 37px 0 38px 0;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.footer-logo {
+  display: block;
+  width: 128px;
+  height: 24px;
+  background-image: url("../../assets/images/footer logo.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  &:hover {
+    opacity: 0.8;
+  }
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.footer-social {
+  display: flex;
+  @media (max-width: 541px) {
+    margin-top: 40px;
+  }
+}
+
+.vk {
+  display: block;
+  width: 30px;
+  height: 17px;
+  background-image: url("../../assets/images/icon_vkontakte.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  &:hover {
+    background-image: url("../../assets/images/icon_vkontakte hover.svg");
+  }
+  &:active {
+    background-image: url("../../assets/images/icon_vkontakte press.svg");
+    opacity: 0.3;
+  }
+}
+
+.inst{
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../../assets/images/icon_instagram.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  margin-left: 29px;
+  &:hover {
+    background-image: url("../../assets/images/icon_instagram hover.svg");
+  }
+  &:active {
+    background-image: url("../../assets/images/icon_instagram press.svg");
+    opacity: 0.3;
+  }
+}
+
+.face {
+  display: block;
+  width: 11px;
+  height: 18px;
+  background-image: url("../../assets/images/facebook.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  margin-left: 35px;
+  &:hover {
+    background-image: url("../../assets/images/facebook hover.svg");
+  }
+  &:active {
+    background-image: url("../../assets/images/facebook press.svg");
+    opacity: 0.3;
+  }
+}
