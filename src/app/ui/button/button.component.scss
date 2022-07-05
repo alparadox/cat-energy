@@ -52,6 +52,7 @@
   text-transform: uppercase;
   color: $black;
   position: relative;
+  padding: 0;
   &:active {
     color: rgba(0, 0, 0, 0.3);
     &:after {
@@ -62,7 +63,7 @@
   &:after {
     content: url("/assets/images/arrow-small.svg");
     position: absolute;
-    left: 162px;
+    left: 136px;
     bottom: 10px;
   }
   &:hover {
