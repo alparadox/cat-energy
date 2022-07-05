@@ -1,19 +1,28 @@
 @import "../../assets/styles/variables";
 
 .card-wrapper {
-  width: 570px;
-  height: 374px;
+  max-width: 570px;
+  min-height: 374px;
   background: $grey;
   padding: 41px 51px 55px 52px;
+  @media(max-width: 990px) and (min-width: 545px){
+    max-width: 708px;
+    min-height: 372px;
+    padding: 77px 60px 53px 52px;
+  }
 }
 
 .title-wrapper {
   display: flex;
   align-items: center;
+  @media(max-width: 990px) and (min-width: 545px){
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
 }
 
 .green-circle {
-  //position: relative;
   width: 100px;
   height: 100px;
   border-radius: 100%;
@@ -21,12 +30,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  @media(max-width: 990px) and (min-width: 545px){
+    min-width: 200px;
+    height: 200px;
+  }
 }
 
 img {
   transform: scale(0.5);
   transform-origin: center;
   position: relative;
+  @media(max-width: 990px) and (min-width: 545px){
+    transform: scale(1);
+  }
 }
 
 .title-h4 {
@@ -35,6 +51,9 @@ img {
   text-transform: uppercase;
   color: $black;
   margin-left: 62px;
+  @media(max-width: 990px) and (min-width: 545px){
+    margin-left: 0;
+  }
   @media(max-width: 544px) {
     font-size: 24px;
   }
@@ -44,9 +63,43 @@ img {
   @include annotation;
   color: $black;
   margin-top: 39px;
+  @media(max-width: 990px) and (min-width: 545px) {
+    display: none;
+  }
+}
+
+.description-tablet {
+  display: none;
+  @media(max-width: 990px) and (min-width: 545px) {
+    display: block;
+    max-width: 342px;
+    @include annotation;
+    color: $black;
+    margin-top: 39px;
+    margin-right: 38px;
+  }
 }
 
 .button-wrapper {
   width: 108px;
   margin-top: 23px;
+  @media(max-width: 990px) and (min-width: 545px) {
+    display: none;
+  }
+}
+
+.button-wrapper-tablet {
+  display: none;
+  @media(max-width: 990px) and (min-width: 545px) {
+    display: block;
+    width: 108px;
+    margin-top: 52px;
+  }
+}
+
+.card-wrapper-tablet {
+  @media(max-width: 990px) and (min-width: 545px) {
+    display: flex;
+    flex-direction: column;
+  }
 }

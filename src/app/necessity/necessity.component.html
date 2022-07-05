@@ -3,7 +3,13 @@
     <div class="green-circle">
       <img [src]="imagePath">
     </div>
-    <p class="title-h4">{{titleCard}}</p>
+    <div class="card-wrapper-tablet">
+      <p class="title-h4">{{titleCard}}</p>
+      <p class="description-tablet">{{descriptionCard}}</p>
+      <div class="button-wrapper-tablet">
+      <app-button [type]="'ghost'" [title]="titleButton"></app-button>
+    </div>
+    </div>
   </div>
   <p class="description">{{descriptionCard}}</p>
   <div class="button-wrapper">
