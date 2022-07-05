@@ -9,6 +9,7 @@ import { RadioComponent } from './ui/radio/radio.component';
 import { InputComponent } from './ui/input/input.component';
 import { InputIconComponent } from './ui/input-icon/input-icon.component';
 import { FooterComponent } from './footer/footer.component';
+import { NecessityComponent } from './necessity/necessity.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FooterComponent } from './footer/footer.component';
     RadioComponent,
     InputComponent,
     InputIconComponent,
-    FooterComponent
+    FooterComponent,
+    NecessityComponent
   ],
   imports: [
     BrowserModule
