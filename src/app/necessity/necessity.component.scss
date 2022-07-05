@@ -12,6 +12,23 @@
   align-items: center;
 }
 
+.green-circle {
+  //position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  background-color: $green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  transform: scale(0.5);
+  transform-origin: center;
+  position: relative;
+}
+
 .title-h4 {
   font-family: $basic-font;
   font-size: 36px;
