@@ -10,6 +10,7 @@ export class NecessityComponent implements OnInit {
   @Input() titleButton = 'title';
   @Input() titleCard = 'title';
   @Input() descriptionCard = 'description';
+  @Input() imagePath = './assets/images/cat_back.svg'
 
   constructor() { }
 

@@ -1,15 +1,37 @@
 @import "../../assets/styles/variables";
 
-.card-wrapper {}
+.card-wrapper {
+  width: 570px;
+  height: 374px;
+  background: $grey;
+  padding: 41px 51px 55px 52px;
+}
 
-.title-wrapper {}
+.title-wrapper {
+  display: flex;
+  align-items: center;
+}
 
 img {}
 
-.title-h4 {}
+.title-h4 {
+  font-family: $basic-font;
+  font-size: 36px;
+  text-transform: uppercase;
+  color: $black;
+  margin-left: 62px;
+  @media(max-width: 544px) {
+    font-size: 24px;
+  }
+}
 
-.description {}
+.description {
+  @include annotation;
+  color: $black;
+  margin-top: 39px;
+}
 
 .button-wrapper {
   width: 168px;
+  margin-top: 23px;
 }

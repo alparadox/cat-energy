@@ -14,3 +14,15 @@ $black-2: #111111;
 
 
 $basic-font: 'Oswald', sans-serif;
+
+@mixin annotation {
+  font: {
+    family: Arial, sans-serif;
+    weight: 400;
+    size: 16px;
+  }
+  color: $dark-grey;
+  @media(max-width: 544px) {
+    font-size: 14px;
+  }
+}
