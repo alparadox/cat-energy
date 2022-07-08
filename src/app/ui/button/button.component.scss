@@ -65,10 +65,17 @@
     position: absolute;
     left: 136px;
     bottom: 10px;
+    @media(max-width: 544px) {
+      left: 101px;
+      bottom: 11px;
+    }
   }
   &:hover {
     &:after {
       content: url("/assets/images/arrow-medium.svg");
     }
+  }
+  @media(max-width: 544px) {
+    font-size: 16px;
   }
 }
