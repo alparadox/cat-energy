@@ -1,0 +1,32 @@
+@import "../../assets/styles/variables";
+
+.window-wrapper {
+  padding: 41px 51px 50px 52px;
+}
+
+.window-title {
+  font-family: $basic-font;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: $black;
+  text-align: center;
+}
+
+.window-annotation {
+  @include annotation;
+  margin-top: 20px;
+}
+
+.window-input-wrapper {
+  max-width: 280px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.window-button-wrapper {
+  max-width: 280px;
+  margin-top: 40px;
+}

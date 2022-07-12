@@ -13,16 +13,17 @@
 </div>
 <br>
 <br>
-
+  <app-modal-window></app-modal-window>
+<br>
+<br>
 <div class="button-wrapper">
-  <app-button [size]="'m'"
+  <app-button [size]="'s'"
               [type]="'green'"
-              (click)="showResultWeight()"
+              (clicked)="onClickPopUp()"
               title="Рассчитать вес"
   ></app-button>
 </div>
 
-  <p>{{result}}</p>
 <br>
 <br>
 

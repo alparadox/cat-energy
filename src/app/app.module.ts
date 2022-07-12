@@ -12,6 +12,7 @@ import { InputComponent } from './ui/input/input.component';
 import { InputIconComponent } from './ui/input-icon/input-icon.component';
 import { FooterComponent } from './footer/footer.component';
 import { NecessityComponent } from './necessity/necessity.component';
+import { ModalWindowComponent } from './modal-window/modal-window.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { NecessityComponent } from './necessity/necessity.component';
     InputComponent,
     InputIconComponent,
     FooterComponent,
-    NecessityComponent
+    NecessityComponent,
+    ModalWindowComponent
   ],
   imports: [
     BrowserModule,
@@ -33,6 +35,7 @@ import { NecessityComponent } from './necessity/necessity.component';
       TuiAlertModule
 ],
   providers: [{provide: TUI_SANITIZER, useClass: NgDompurifySanitizer}],
+  entryComponents: [ModalWindowComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
