@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Inject, OnInit} from '@angular/core';
+import {CalculatorWeightService} from "../calculator-weight.service";
 
 @Component({
   selector: 'app-modal-window',
@@ -7,14 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ModalWindowComponent implements OnInit {
   isCalculated: boolean = false;
+  parameter1 = '';
+  parameter2 = '';
+  result = '';
 
-  constructor() { }
+  constructor(
+    @Inject(CalculatorWeightService) public calculatorWeightService: CalculatorWeightService
+  ) { }
 
   ngOnInit(): void {
   }
 
   calcPet() {
-    // рассчет жирности
+    this.result = this.calculatorWeightService.showResultWeight(+this.parameter1, +this.parameter2);
     if (!this.isCalculated) {
       this.isCalculated = !this.isCalculated;
     }

@@ -5,19 +5,17 @@ import { Injectable } from '@angular/core';
 })
 export class CalculatorWeightService {
 
-  parametr1 = 30;
-  parametr2 = 15;
   result = 'вес';
 
   constructor() { }
 
-  calcWeight() {
-    let weight = ((this.parametr1 / 0.762)-this.parametr2) / 0.9156 - this.parametr2;
+  calcWeight(parameter1: number, parameter2: number) {
+    let weight = ((+parameter1 / 0.762) - +parameter2) / 0.9156 - +parameter2;
     return weight;
   }
 
-  showResultWeight() {
-    let count = this.calcWeight();
+  showResultWeight(parameter1: number, parameter2: number) {
+    let count = this.calcWeight(parameter1, parameter2);
 
     if(count >= 9 && count <= 30) {
       this.result = 'Вес вашего питомца в пределах нормы';

@@ -13,6 +13,7 @@ import { InputIconComponent } from './ui/input-icon/input-icon.component';
 import { FooterComponent } from './footer/footer.component';
 import { NecessityComponent } from './necessity/necessity.component';
 import { ModalWindowComponent } from './modal-window/modal-window.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -29,11 +30,12 @@ import { ModalWindowComponent } from './modal-window/modal-window.component';
   ],
   imports: [
     BrowserModule,
-      TuiRootModule,
-      BrowserAnimationsModule,
-      TuiDialogModule,
-      TuiAlertModule
-],
+    TuiRootModule,
+    BrowserAnimationsModule,
+    TuiDialogModule,
+    TuiAlertModule,
+    FormsModule
+  ],
   providers: [{provide: TUI_SANITIZER, useClass: NgDompurifySanitizer}],
   entryComponents: [ModalWindowComponent],
   bootstrap: [AppComponent]

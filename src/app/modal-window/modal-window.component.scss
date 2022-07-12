@@ -1,7 +1,7 @@
 @import "../../assets/styles/variables";
 
 .window-wrapper {
-  padding: 41px 51px 50px 52px;
+  padding: 31px 41px 40px 42px;
 }
 
 .window-title {
@@ -16,6 +16,7 @@
 .window-annotation {
   @include annotation;
   margin-top: 20px;
+  text-align: justify;
 }
 
 .window-input-wrapper {
@@ -26,7 +27,22 @@
   gap: 20px;
 }
 
+.window-result {
+  margin-top: 20px;
+  font-family: $basic-font;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $black;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
 .window-button-wrapper {
   max-width: 280px;
   margin-top: 40px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }

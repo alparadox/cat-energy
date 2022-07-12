@@ -1,12 +1,15 @@
 <div class="window-wrapper">
   <p class="window-title">Рассчитать индекс массы тела</p>
-  <p class="window-annotation">Для расчета ИМТ вашего питомца введите два параметра ниже: параметр A - окружность кошачьей грудной клетки, параметр B - длина части задней лапы от колена до лодыжки</p>
-
-  <p *ngIf="isCalculated">Ваш питомец жирный</p>
+  <p class="window-annotation">Для расчета ИМТ вашего питомца введите два параметра ниже: параметр A - окружность кошачьей грудной клетки на уровне 9-го ребра, параметр B - длина части задней лапы от колена до лодыжки</p>
   <div class="window-input-wrapper">
-    <app-input [placeholder]="'Введите параметр'" [title]="'A*:'"></app-input>
-    <app-input [placeholder]="'Введите параметр'" [title]="'B*:'"></app-input>
+    <app-input [placeholder]="'Введите параметр'"
+               [(ngModel)]="parameter1"
+               [title]="'A*:'"></app-input>
+    <app-input [placeholder]="'Введите параметр'"
+               [(ngModel)]="parameter2"
+               [title]="'B*:'"></app-input>
   </div>
+  <p *ngIf="isCalculated" class="window-result">{{result}}</p>
   <div class="window-button-wrapper">
     <app-button (clicked)="calcPet()"></app-button>
   </div>
