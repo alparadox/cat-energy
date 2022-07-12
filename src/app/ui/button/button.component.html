@@ -4,4 +4,5 @@
         [class.button-ghost]="type == 'ghost'"
         [class.button-small]="size == 's'"
         [class.button-medium]="size == 'm'"
+        (click)="onClick()"
 >{{title}}</button>
