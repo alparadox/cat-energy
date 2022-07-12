@@ -1,3 +1,4 @@
+<tui-root>
 <app-header></app-header>
 <br>
 <br>
@@ -10,12 +11,20 @@
                  [descriptionCard]="card.descriptionCard"
   ></app-necessity>
 </div>
+<br>
+<br>
 
-<!--<div class="button-wrapper">-->
-<!--  <app-button [size]="'s'" [type]="'ghost'" title="каталог slim"></app-button>-->
-<!--</div>-->
-<!--<br>-->
-<!--<br>-->
+<div class="button-wrapper">
+  <app-button [size]="'m'"
+              [type]="'green'"
+              (click)="showResultWeight()"
+              title="Рассчитать вес"
+  ></app-button>
+</div>
+
+  <p>{{result}}</p>
+<br>
+<br>
 
 <!--<div class="input-wrapper">-->
 <!--  <app-input [placeholder]="'Введите имя питомца'"></app-input>-->
@@ -28,3 +37,5 @@
 <!--</div>-->
 <!--<br>-->
 <!--<br>-->
+
+</tui-root>
