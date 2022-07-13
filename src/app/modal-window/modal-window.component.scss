@@ -2,6 +2,9 @@
 
 .window-wrapper {
   padding: 31px 41px 40px 42px;
+  @media(max-width: 544px) {
+    padding: 21px 21px 20px 22px;
+  }
 }
 
 .window-title {
