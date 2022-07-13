@@ -1,0 +1,48 @@
+@import "../../assets/styles/variables";
+
+.card {}
+
+.product {}
+
+.content {
+  background: $grey;
+  padding: 162px 33px 40px 38px;
+}
+
+.title {
+  font-family: $basic-font;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: $special_dark-grey-2;
+  margin-bottom: 27px;
+  max-width: 145px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.info {
+  @include annotation;
+  line-height: 16px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  padding-right: 4px;
+}
+
+.info-title {}
+
+.info-value {}
+
+.liner {
+  width: 169px;
+  height: 0px;
+  margin-bottom: 6px;
+  border-bottom: 1px solid $special-grey;
+}
+
+.button {
+  width: 168px;
+  margin-top: 33px;
+  font-size: 16px;
+}

@@ -1,0 +1,24 @@
+<div class="card">
+  <img class="product" [src]="image">
+  <div class="content">
+    <p class="title">{{title}}</p>
+    <div class="info">
+      <p class="info-title">Масса</p>
+      <p class="info-value">{{weight}} г</p>
+    </div>
+    <div class="liner"></div>
+    <div class="info">
+      <p class="info-title">Вкус</p>
+      <p class="info-value">{{flavor}}</p>
+    </div>
+    <div class="liner"></div>
+    <div class="info">
+      <p class="info-title">Цена</p>
+      <p class="info-value">{{price}} Р.</p>
+    </div>
+    <div class="liner"></div>
+    <div class="button">
+      <app-button [title]="'заказать'"></app-button>
+    </div>
+  </div>
+</div>

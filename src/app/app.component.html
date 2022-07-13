@@ -1,19 +1,50 @@
 <tui-root>
-<app-header></app-header>
-<br>
-<br>
+  <app-header></app-header>
+  <br>
+  <br>
+  <div class="card-product-wrapper">
+    <app-card-product [title]="'Cat Energy PRO 500 г'"
+                      [weight]="500"
+                      [flavor]="'Курица'"
+                      [price]="700"
+                      [image]="'assets/images/catalog-1-desktop 1.png'"
+    ></app-card-product>
+    <app-card-product [title]="'Cat Energy PRO 1000 г'"
+                      [weight]="1000"
+                      [flavor]="'Курица'"
+                      [price]="1000"
+                      [image]="'assets/images/catalog-2-desktop 1.png'"
+    ></app-card-product>
+    <app-card-product [title]="'Cat Energy PRO 500 г'"
+                      [weight]="500"
+                      [flavor]="'Рыба'"
+                      [price]="700"
+                      [image]="'assets/images/catalog-3-desktop.png'"
+    ></app-card-product>
+    <app-card-product [title]="'Cat Energy PRO 1000 г'"
+                      [weight]="1000"
+                      [flavor]="'Рыба'"
+                      [price]="1000"
+                      [image]="'assets/images/catalog-4-desktop 1.png'"
+    ></app-card-product>
+    <app-card-product></app-card-product>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
 
-<div class="card-wrapper">
-  <app-necessity *ngFor="let card of necessityCards;"
+  <div class="card-wrapper">
+    <app-necessity *ngFor="let card of necessityCards;"
                  [titleButton]="card.titleButton"
                  [titleCard]="card.titleCard"
                  [imagePath] = "card.path"
                  [descriptionCard]="card.descriptionCard"
   ></app-necessity>
-</div>
-<br>
-<br>
-<div class="button-wrapper">
+  </div>
+  <br>
+  <br>
+  <div class="button-wrapper">
   <app-button [size]="'s'"
               [type]="'green'"
               (clicked)="onClickPopUp()"
@@ -21,8 +52,8 @@
   ></app-button>
 </div>
 
-<br>
-<br>
+  <br>
+  <br>
 
 <!--<div class="input-wrapper">-->
 <!--  <app-input [placeholder]="'Введите имя питомца'"></app-input>-->

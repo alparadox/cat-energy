@@ -14,6 +14,7 @@ import { FooterComponent } from './footer/footer.component';
 import { NecessityComponent } from './necessity/necessity.component';
 import { ModalWindowComponent } from './modal-window/modal-window.component';
 import {FormsModule} from "@angular/forms";
+import { CardProductComponent } from './card-product/card-product.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import {FormsModule} from "@angular/forms";
     InputIconComponent,
     FooterComponent,
     NecessityComponent,
-    ModalWindowComponent
+    ModalWindowComponent,
+    CardProductComponent
   ],
   imports: [
     BrowserModule,
