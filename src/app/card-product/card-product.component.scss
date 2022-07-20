@@ -2,9 +2,13 @@
 
 .card {
   height: 511px;
+  max-width: 324px;
   position: relative;
   display: flex;
   align-items: flex-end;
+  @media(max-width: 544px) {
+
+  }
 }
 
 .product {
@@ -18,6 +22,9 @@
   background: $grey;
   padding: 162px 33px 40px 38px;
   height: 431px;
+  @media(max-width: 544px) {
+    background: $white;
+  }
 }
 
 .title {
@@ -50,10 +57,19 @@
   height: 0px;
   margin-bottom: 6px;
   border-bottom: 1px solid $special-grey;
+  @media(max-width: 990px) {
+    width: 249px;
+  }
+  @media(max-width: 544px) {
+    display: none;
+  }
 }
 
 .button {
   width: 168px;
   margin-top: 33px;
   font-size: 16px;
+  @media(max-width: 990px) {
+    width: 248px;
+  }
 }
