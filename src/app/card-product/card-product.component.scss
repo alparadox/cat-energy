@@ -1,13 +1,27 @@
 @import "../../assets/styles/variables";
 
+:host {
+  display: block;
+  flex-basis: 20%;
+  @media(max-width: 544px) {
+    width: 100%;
+  }
+}
+
 .card {
+  width: 100%;
   height: 511px;
-  max-width: 324px;
   position: relative;
   display: flex;
   align-items: flex-end;
   @media(max-width: 544px) {
-
+    position: static;
+    display: block;
+    width: 100%;
+    padding: 20px 29px 40px 29px;
+  }
+  @media(max-width: 420px) {
+    padding: 0px 19px 20px 19px;
   }
 }
 
@@ -16,14 +30,19 @@
   bottom: 309px;
   left: 50%;
   transform: translateX(-50%);
+  @media(max-width: 544px) {
+    position: static;
+    transform: scale(0.8);
+  }
 }
 
 .content {
   background: $grey;
   padding: 162px 33px 40px 38px;
-  height: 431px;
+  max-height: 431px;
   @media(max-width: 544px) {
     background: $white;
+    padding: 0;
   }
 }
 
@@ -37,6 +56,13 @@
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  @media(max-width: 544px) {
+    max-width: 76px;
+    font-size: 16px;
+  }
+  @media(max-width: 544px) {
+    text-align: left;
+  }
 }
 
 .info {
@@ -46,6 +72,9 @@
   justify-content: space-between;
   margin-bottom: 8px;
   padding-right: 4px;
+  @media(max-width: 544px) {
+    font-size: 12px;
+  }
 }
 
 .info-title {}
@@ -71,5 +100,36 @@
   font-size: 16px;
   @media(max-width: 990px) {
     width: 248px;
+  }
+  @media(max-width: 544px) {
+    display: none;
+  }
+}
+
+.button-mobile {
+  display: none;
+  @media(max-width: 544px) {
+    display: block;
+    margin-top: 33px;
+    font-size: 16px;
+    width: 100%;
+  }
+}
+
+.container-mobile {
+  @media(max-width: 544px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.liner-mobile {
+  display: none;
+  @media(max-width: 544px) {
+    display: block;
+    height: 0;
+    width: 100%;
+    border-bottom: 1px solid $grey-2;
+    margin-bottom: 19px;
   }
 }
